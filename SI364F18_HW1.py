@@ -143,40 +143,6 @@ def mediaSearch():
     else:
         return my_html_form_pt1 + my_html_form_pt2
 
-        
-
-
-    #     # <fieldset>
-    #         <legend>Which of the following would you like to search for?</legend>
-    #         <input type = 'checkbox' name = 'media' value = 'movie'> Movie <br>
-    #         <input type = 'checkbox' name = 'media' value = 'show'> TV Show <br>
-    #     </fieldset><br>
-    #     <input type = "submit" value = "Submit"
-    # </form>
-    # </body>
-    # </html>
-    # '''
-
-    # if request.method == "POST":
-    #     medias = request.values.get("media")
-    #     terms = request.values.get("term")
-    #     base_url = 'https://itunes.apple.com/search'
-    #     params_dict = {}
-    #     params_dict['media'] = medias
-    #     params_dict['term'] = terms
-    #     r = requests.get(base_url, params = params_dict)
-    #     objs = json.loads(r.text)
-    #     results = "<h1>The top results are as follows:\n\n</h1>"
-    #     for x in objs['results']:
-    #         song_artist = x['artistName']
-    #         song_name = x['trackName']
-    #         format = "{} by {}<br>".format(song_name, song_artist)
-    #         results += format
-    #     return my_html_form + results
-
-    # else:
-    #     return my_html_form
-
 
 if __name__ == '__main__':
     app.run()
